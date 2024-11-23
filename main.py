@@ -4,7 +4,9 @@ import serial
 Crea un objeto Serial llamado que representa la conexión serial al Arduino. 
 (puerto, velocidad)
 '''
-ard = serial.Serial('/dev/ttyUSB0', 9600)
+ard = serial.Serial('COM1', 9600)  # Para Windows
+# ard = serial.Serial('/dev/ttyUSB0', 9600)  # Para Linux
+# ard = serial.Serial('/dev/tty.usbserial', 9600)  # Para macOS
 
 def send_msg_to_display(msg):
     '''
