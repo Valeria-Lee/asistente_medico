@@ -4,5 +4,5 @@ class RecordatorioGrupo:
     def __init__(self, recordatorios):
         self.recordatorios = recordatorios
 
-   def crearNuevoRecordatorio(self):
-       pass
+def crearNuevoRecordatorio(self):
+    pass
